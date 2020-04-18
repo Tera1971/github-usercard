@@ -60,7 +60,37 @@ function hubCardMaker(userData) {
   const followerCount = document.createElement('p');
   const followingCount = document.createElement('p');
   const bio = document.createElement('p');
+
+
+
+  image.src = object.avatar_url;
+  name.textContent = object.name;
+  userName.textContent = object.login;
+  location.textContent = (`Location: ${object.location}`);
+  profile.textContent = (`Profile: ${userAddy}`);
+  userAddy.textContent = object.html_url;
+  followers.textContent = (`Followers: ${object.followers}`);
+  following.textContent = (`Following: ${object.following}`);
+  bio.textContent = (`Bio: ${object.bio}`);
+
+
+
+  userDiv.appendChild(image);
+  userDiv.appendChild(userInfo);
+  userInfo.appendChild(name);
+  userInfo.appendChild(username);
+  userInfo.appendChild(location);
+  userInfo.appendChild(profile);
+  userInfo.appendChild(followers);
+  userInfo.appendChild(following);
+  userInfo.appendChild(bio);
+  profile.appendChild(userAddy);
+
+  return card;
 }
+
+
+
 
 /* List of LS Instructors Github username's: 
   tetondan
