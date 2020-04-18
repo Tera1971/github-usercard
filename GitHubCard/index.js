@@ -1,7 +1,10 @@
+import Axios from "axios";
+
 /* Step 1: using axios, send a GET request to the following URL 
            (replacing the palceholder with your Github name):
            https://api.github.com/users/<your name>
 */
+Axios.get("https://api.github.com/users/Tera1971")
 
 /* Step 2: Inspect and study the data coming back, this is YOUR 
    github info! You will need to understand the structure of this 
@@ -45,6 +48,19 @@ const followersArray = [];
 </div>
 
 */
+function hubCardMaker(userData) {
+  const userDiv = document.createElement('div');
+  const image = document.createElement('img');
+  const userInfo = document.createElement('div');
+  const name = document.createElement('h3');
+  const userName = document.createElement('p');
+  const location = document.createElement('p');
+  const profile = document.createElement('p');
+  const userAddy = document.createElement('a');
+  const followerCount = document.createElement('p');
+  const followingCount = document.createElement('p');
+  const bio = document.createElement('p');
+}
 
 /* List of LS Instructors Github username's: 
   tetondan
